@@ -24,7 +24,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={Lilly} className="Wiggly" alt="Lilly Piri profile photo" /><br/>
+          <img src={Lilly} className="Wiggly" alt="Lilly Piri profile" /><br/>
           <img onClick={e => this.setState({currentPage: 'panel'})} src={logo} className="App-logo" alt="Lilly Piri signature" />
           <h3 className="App-title">
             artist x illustrator <span role="img" aria-label="palette emoji">🎨</span><br/>
@@ -39,7 +39,7 @@ class App extends Component {
             <a href="https://github.com/lillypiri">Github</a>
             </h3>
         </header>
-        <p className="App-intro">
+        <div className="App-intro">
           { this.state.currentPage === 'panel' &&
           <div>
             <img src={PixelBeach} className="Images" alt="Pixel Beach - cover art painting by Lilly Piri"/>
@@ -56,7 +56,7 @@ class App extends Component {
               <StillLife/>
             </div>
           }
-        </p>
+        </div>
 
         
 
