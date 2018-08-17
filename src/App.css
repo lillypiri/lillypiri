@@ -52,6 +52,7 @@ h3 a:hover {
   width: 960px;
   margin: auto;
   border-radius: 2px;
+  padding: 5%;
 }
   /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -66,4 +67,28 @@ h3 a:hover {
   font-size: 0.7em;
   text-transform: uppercase;
   text-align: center;
+  padding: 5%;
 }
+
+.Wiggly {
+  max-width: 15%;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  border: 10px solid white;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  transition: all 0.2s ease;
+}
+
+.Wiggly:hover {
+  transform: rotate(3deg);
+}
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    .Wiggly {
+      max-width: 40%;
+      padding: 10px;
+      border-radius: 2px;
+    }
+  } 
